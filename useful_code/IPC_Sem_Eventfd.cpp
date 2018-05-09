@@ -10,9 +10,10 @@ using std::vector;
 
 /**
  * 对比eventfd和POSIX信号量semaphore做线程同步的速率，结论是差不多
- * 另外，条件变量和这两个比的有个缺点：若线程未达到wait的位置就notify，有可能丢失
  * 场景：6个线程的ID分别为1到6,每个线程将自己的ID在屏幕打印n遍，要求顺序为123456123456...
  * time -p ./bin/work > /dev/null 测量运行时间
+ * 
+ * 当然，这个场景其实也可以用mutex+condition完成，依然是每个线程一个condition
  */
 
 /**
