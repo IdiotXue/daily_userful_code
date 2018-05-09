@@ -3,7 +3,8 @@
 2. 执行 ./build即可运行，缺bin和obj目录就创建一下
 
 # 摘要
-- IPC_Dinning_Philosophers: 哲学家进餐问题，多线程下的解法
+- IPC_Dinning_Philosophers: 哲学家进餐问题，多线程下的解法，mutex+condition_variable
+- IPC_Sem_Eventfd: 线程同步的两种方法：POSIX信号量semaphore 和 eventfd速率的对比
 - istringstream_usage: istringstream和getline简化文件读写
 - judge_byte_order: 判断系统字节序
 - lseek_write: lseek产生文件空洞的实验
