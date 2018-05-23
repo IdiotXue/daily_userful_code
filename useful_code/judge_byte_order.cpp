@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     if (bo.byte[0] == 0x01 && bo.byte[1] == 0x02)
         cout << "big endian" << endl; //低地址存高有效位
     else if (bo.byte[0] == 0x02 && bo.byte[1] == 0x01)
-        cout << "small endian" << endl; //低地址存地有效为位
+        cout << "small endian" << endl; //低地址存低有效位
     else
         cout << "unknown" << endl;
     return 0;
