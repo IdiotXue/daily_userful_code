@@ -3,6 +3,7 @@
 2. 执行 ./build即可运行，缺bin和obj目录就创建一下
 
 # 摘要
+- get_page_size: 获取虚拟内存分页大小sysconf
 - IPC_Dinning_Philosophers: 哲学家进餐问题，多线程下的解法，mutex+condition_variable
 - IPC_Sem_Eventfd: 线程同步的两种方法：POSIX信号量semaphore 和 eventfd速率的对比
 - Posix_shm_sem: Posix共享内存与信号量做进程间同步和通信的例子
